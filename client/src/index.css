@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
+    'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #14181f;
+  background-color: #f3f0e7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --accent: #1a9c8a;
+  --accent-dark: #167b6d;
+  --muted: #556070;
+  --surface: rgba(255, 255, 255, 0.9);
+  --shadow: 0 24px 45px rgba(15, 24, 35, 0.08);
+  --shadow-sm: 0 16px 30px rgba(15, 24, 35, 0.08);
+  --text: #14181f;
+  --cursor-x: 50vw;
+  --cursor-y: 30vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(
+      circle at var(--cursor-x) var(--cursor-y),
+      rgba(26, 156, 138, 0.32),
+      transparent 48%
+    ),
+    radial-gradient(circle at 80% 15%, rgba(244, 124, 95, 0.22), transparent 48%),
+    radial-gradient(circle at 10% 85%, rgba(99, 182, 255, 0.2), transparent 50%),
+    linear-gradient(120deg, #fdf6ee 0%, #eef5fb 100%);
+  transition: background-position 0.1s ease;
+  color: var(--text);
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  filter: blur(0px);
+  opacity: 0.18;
+}
+
+body::before {
+  top: 120px;
+  right: -80px;
+  background: #ea6a5a;
+}
+
+body::after {
+  bottom: -60px;
+  left: -60px;
+  background: #1a9c8a;
+}
+
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display',
+    'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+}

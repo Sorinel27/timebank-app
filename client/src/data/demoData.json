@@ -1,0 +1,158 @@
+{
+  "users": {
+    "andrei": {
+      "id": "andrei",
+      "name": "Andrei Popa",
+      "handle": "@andrei",
+      "skill": "Guitar teacher",
+      "city": "Cluj-Napoca",
+      "rating": 4.8,
+      "joined": "2025-09-14",
+      "bio": "Live session coach focused on small, repeatable practice plans."
+    },
+    "ioana": {
+      "id": "ioana",
+      "name": "Ioana Ionescu",
+      "handle": "@ioana",
+      "skill": "Product designer",
+      "city": "Cluj-Napoca",
+      "rating": 4.6,
+      "joined": "2025-11-02",
+      "bio": "Helps early founders clarify brand voice and design direction."
+    },
+    "maria": {
+      "id": "maria",
+      "name": "Maria Dumitru",
+      "handle": "@maria",
+      "skill": "Language tutor",
+      "city": "Cluj-Napoca",
+      "rating": 4.9,
+      "joined": "2024-12-19",
+      "bio": "Conversation-first Romanian + English tutoring with weekly check-ins."
+    },
+    "vlad": {
+      "id": "vlad",
+      "name": "Vlad Toma",
+      "handle": "@vlad",
+      "skill": "Fitness coach",
+      "city": "Floresti",
+      "rating": 4.7,
+      "joined": "2025-03-28",
+      "bio": "Functional training plans for busy schedules and small spaces."
+    }
+  },
+  "services": [
+    {
+      "id": "guitar-lessons",
+      "title": "Guitar Lessons",
+      "rate": 1,
+      "unit": "hour",
+      "providerId": "andrei",
+      "tags": ["Beginner friendly", "Acoustic", "Chord progressions"],
+      "summary": "Learn rhythm, fingerstyle, and song breakdowns with practical weekly practice plans.",
+      "availability": "Weeknights and Saturday mornings"
+    },
+    {
+      "id": "meal-prep",
+      "title": "Meal Prep Coaching",
+      "rate": 1,
+      "unit": "hour",
+      "providerId": "ioana",
+      "tags": ["Nutrition", "Busy schedules", "Batch cooking"],
+      "summary": "Plan a week of balanced meals, shopping list included, optimized for small kitchens.",
+      "availability": "Sundays 10:00 - 18:00"
+    },
+    {
+      "id": "logo-review",
+      "title": "Logo & Brand Review",
+      "rate": 2,
+      "unit": "session",
+      "providerId": "ioana",
+      "tags": ["Branding", "Feedback", "Pitch-ready"],
+      "summary": "Structured review with actionable feedback, moodboard alignment, and next steps.",
+      "availability": "Two evenings per week"
+    },
+    {
+      "id": "romanian-conversation",
+      "title": "Romanian Conversation Club",
+      "rate": 1,
+      "unit": "hour",
+      "providerId": "maria",
+      "tags": ["Language", "Beginner friendly", "Weekly check-ins"],
+      "summary": "Warm-up prompts, real-world phrases, and confidence-building speaking drills.",
+      "availability": "Tuesdays and Thursdays after 18:00"
+    },
+    {
+      "id": "strength-session",
+      "title": "Strength & Mobility Session",
+      "rate": 2,
+      "unit": "session",
+      "providerId": "vlad",
+      "tags": ["Fitness", "Mobility", "Home workouts"],
+      "summary": "Full-body routine with mobility focus, tailored to your space and equipment.",
+      "availability": "Weekends, book 2 days ahead"
+    },
+    {
+      "id": "portfolio-feedback",
+      "title": "UX Portfolio Feedback",
+      "rate": 1,
+      "unit": "hour",
+      "providerId": "ioana",
+      "tags": ["UX", "Career", "Interview prep"],
+      "summary": "Review portfolio structure, storytelling, and hiring manager expectations.",
+      "availability": "Mondays 18:00 - 21:00"
+    }
+  ],
+  "requests": [
+    {
+      "id": "req-1",
+      "serviceId": "guitar-lessons",
+      "requesterId": "ioana",
+      "providerId": "andrei",
+      "hours": 1,
+      "status": "completed",
+      "createdAt": "2026-02-08"
+    },
+    {
+      "id": "req-2",
+      "serviceId": "romanian-conversation",
+      "requesterId": "andrei",
+      "providerId": "maria",
+      "hours": 2,
+      "status": "accepted",
+      "createdAt": "2026-02-05"
+    },
+    {
+      "id": "req-3",
+      "serviceId": "strength-session",
+      "requesterId": "ioana",
+      "providerId": "vlad",
+      "hours": 1,
+      "status": "requested",
+      "createdAt": "2026-02-09"
+    }
+  ],
+  "balances": {
+    "ioana": 2,
+    "andrei": 4,
+    "maria": 6,
+    "vlad": 1
+  },
+  "statusSteps": [
+    {
+      "id": "requested",
+      "title": "Request sent",
+      "description": "Ioana requests a 1-hour guitar lesson."
+    },
+    {
+      "id": "accepted",
+      "title": "Service accepted",
+      "description": "Andrei accepts and schedules the session."
+    },
+    {
+      "id": "completed",
+      "title": "Marked completed",
+      "description": "Ioana confirms delivery and credits transfer."
+    }
+  ]
+}
