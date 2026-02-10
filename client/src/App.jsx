@@ -697,6 +697,7 @@ function Footer() {
         <span>Time Credits</span>
         <span>2026</span>
       </div>
+      <div className="footer-credit">Made by Sorin</div>
     </footer>
   )
 }

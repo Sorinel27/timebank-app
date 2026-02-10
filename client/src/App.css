@@ -607,6 +607,7 @@
 }
 
 .footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -620,6 +621,15 @@
   display: flex;
   gap: 1rem;
   color: var(--muted);
+}
+
+.footer-credit {
+  position: absolute;
+  right: 4vw;
+  bottom: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
 }
 
 .eyebrow {
